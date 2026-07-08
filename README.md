@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-0a0806?style=for-the-badge&logo=javascript&logoColor=e8a33d)
 ![Sem dependências](https://img.shields.io/badge/zero%20dependências-c8371e?style=for-the-badge)
 
-Projeto de portfólio 100% artesanal: **um único arquivo HTML**, sem frameworks, sem bibliotecas, sem build. Tudo — animações, ícones, efeitos 3D e partículas — foi escrito à mão em HTML, CSS e JavaScript puro.
+Projeto de portfólio 100% artesanal: **HTML, CSS e JavaScript separados**, sem frameworks, sem bibliotecas, sem build. Tudo — animações, ícones, efeitos 3D e partículas — foi escrito à mão.
 
 ---
 
@@ -21,9 +21,9 @@ Homenagem à ancestralidade **Pataxó** de Alex Pereira e à origem Tupi do nome
 - Modo de gravação: abra a página com `#loader` no fim da URL para segurar a tela — ideal para gravar stories e reels.
 
 ### Efeitos 3D reais
-- Cartão do herói com *tilt* 3D que responde ao **mouse** no desktop e ao **giroscópio** no celular (funciona no navegador interno do Instagram);
 - Cartões de conquistas com *flip* 3D por hover ou toque;
-- Galeria com elevação em perspectiva e brilho especular dinâmico.
+- Galeria com elevação em perspectiva e brilho especular dinâmico;
+- Cartão do herói com moldura, selo e brilho em profundidade (`transform-style: preserve-3d`).
 
 ### Direção de arte
 - Paleta inspirada no urucum, jenipapo e ouro dos cinturões;
@@ -50,7 +50,9 @@ python -m http.server 8899
 ## ✦ Estrutura
 
 ```
-├── index.html   # página completa (markup + estilos + scripts)
+├── index.html   # markup
+├── style.css    # estilos
+├── script.js    # interações
 └── assets/      # fotografias (Wikimedia Commons — licenças livres)
 ```
 
